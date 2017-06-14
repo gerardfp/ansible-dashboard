@@ -4,7 +4,6 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import RaisedButton from 'material-ui/RaisedButton';
-
 import {
   Table,
   TableBody,
@@ -14,7 +13,6 @@ import {
   TableRowColumn,
 } from 'material-ui/Table';
 
-import logo from './logo.svg';
 import './App.css';
 
 injectTapEventPlugin();
@@ -93,4 +91,3 @@ class App extends Component {
 }
 
 export default App;
-//$data->ansible_distribution," ",$data->ansible_distribution_release," ",$data->ansible_distribution_version,"
