@@ -13,7 +13,7 @@ import {
   TableRowColumn,
 } from 'material-ui/Table';
 import {Tabs, Tab} from 'material-ui/Tabs';
-import SwipeableViews from 'react-swipeable-views';
+import SwipeableViews from 'material-ui/react-swipeable-views';
 
 import './App.css';
 
