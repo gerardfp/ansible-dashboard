@@ -62,7 +62,7 @@ class App extends Component {
     <MuiThemeProvider>
         <div>
           <AppBar
-          title="ElPuig Ansible"
+          title="ElPuig Ansible Dashboard"
           iconClassNameRight="muidocs-icon-navigation-expand-more" />
 
           <Table style={{ tableLayout: 'auto'}} fixedHeader={false}>
