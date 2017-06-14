@@ -12,6 +12,7 @@ import {
   TableRow,
   TableRowColumn,
 } from 'material-ui/Table';
+import SwipeableViews from 'react-swipeable-views';
 
 import './App.css';
 
@@ -21,6 +22,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
+      slideIndex: 0,
       data: []
     };
   }
@@ -36,6 +38,12 @@ class App extends Component {
       });
     }
   }
+
+  handleChange = (value) => {
+    this.setState({
+      slideIndex: value,
+    });
+  };
 
   render() {
     var rows = this.state.data.map((content, idx) => {
@@ -62,7 +70,14 @@ class App extends Component {
           <AppBar
           title="ElPuig Ansible Dashboard"
           iconClassNameRight="muidocs-icon-navigation-expand-more" />
-
+        <Tabs
+          onChange={this.handleChange}
+          value={this.state.slideIndex}
+        >
+          <Tab label="Stallman" value={0} />
+          <Tab label="Ada" value={1} />
+          <Tab label="Turing" value={2} />
+        </Tabs>
           <Table style={{ tableLayout: 'auto'}} fixedHeader={false}>
             <TableHeader>
               <TableRow>
