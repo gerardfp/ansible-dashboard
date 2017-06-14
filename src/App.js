@@ -50,7 +50,7 @@ class App extends Component {
                 <TableRowColumn>{content.ansible_facts.ansible_devices.sr0.model}</TableRowColumn>
                 <TableRowColumn>{content.ansible_facts.ansible_devices.sr0.size}</TableRowColumn>
                 <TableRowColumn>{content.ansible_facts.ansible_processor_cores}</TableRowColumn>
-                <TableRowColumn>{content.ansible_facts.ansible_processor[0]}</TableRowColumn>
+                <TableRowColumn>{content.ansible_facts.ansible_processor[0] + ' ' + content.ansible_facts.ansible_processor[1]}</TableRowColumn>
                 <TableRowColumn>{content.ansible_facts.ansible_distribution}</TableRowColumn>
               </TableRow>
       );
